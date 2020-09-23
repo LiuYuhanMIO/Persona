@@ -1,0 +1,26 @@
+/* pages/test/test.wxss */
+.answer1{
+  margin: 0;
+  font-size: 36rpx;
+  margin-top: 50rpx;
+}
+.answer2{
+  font-size: 36rpx;
+  margin-top: 80rpx;
+}
+.answer3{
+  font-size: 36rpx;
+  margin-top: 110rpx;
+}
+.answer4{
+  font-size: 36rpx;
+  margin-top: 130rpx;
+}
+.last_btn{
+  margin-top: 150rpx;
+  margin-left: 10%;
+}
+.next_btn{
+  margin-top: 150rpx;
+  margin-right: 10%;
+}
