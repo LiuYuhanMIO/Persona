@@ -16,6 +16,23 @@
   color: #aaa;
 }
 
+.userinfo-nickname2 {
+  color: #000000;
+  text-align: center;
+  font-size:30px;
+}
+
 .usermotto {
-  margin-top: 200px;
+  margin: 120px;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  border-radius: 5px;
+}
+.user-motto{
+  font-size: 32rpx;
+  font-family: MicroSoft Yahei;
+  font-weight: bold;
+  line-height: 80rpx;
 }
