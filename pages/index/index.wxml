@@ -7,7 +7,11 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="userinfo">
+    <text class="userinfo-nickname2">Persona</text>
+  </view>
+  
+  <view class="usermotto" bindtap='beginttest'>
+    <test class="user-motto">{{motto}}</test>
   </view>
 </view>
