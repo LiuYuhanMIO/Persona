@@ -1,6 +1,8 @@
 <!--pages/test/test.wxml-->
 <text>你最喜欢的颜色是？以下哪一项描述与你最相符</text>
+
 <view>
+  <radio-group bindchange='select' bindtap="playmusic">
   <button type="primary" plain="true" class="answer1">黑色</button>
   <button type="primary" plain="true" class="answer2">红色</button>
   <button type="primary" plain="true" class="answer3">蓝色</button>
@@ -8,4 +10,6 @@
 
   <button type="default" size="mini" class="last_btn">上一题</button>
   <button type="primary" size="mini" class="next_btn">下一题</button>
+
+  </radio-group>
 </view>

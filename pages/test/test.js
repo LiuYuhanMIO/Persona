@@ -8,6 +8,19 @@ Page({
 
   },
 
+  //点击按钮播放音乐
+ playmusic:function(){
+  const innerAudioContext = wx.createInnerAudioContext()
+  innerAudioContext.autoplay = true
+  innerAudioContext.src = '/data/#A4.mp3'
+  innerAudioContext.onPlay(() => {
+    console.log('开始播放')
+  })
+  innerAudioContext.onError((res) => {
+    console.log(res.errMsg)
+    console.log(res.errCode)
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */
