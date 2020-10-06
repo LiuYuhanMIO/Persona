@@ -22,7 +22,7 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
-    "useApiHook": true,
+    "useApiHook": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -36,7 +36,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.0",
-  "appid": "wx9ad2cea7df7ed61f",
+  "appid": "wx4ba9dbb3ad653f1c",
   "projectname": "Persona",
   "debugOptions": {
     "hidedInDevtools": []

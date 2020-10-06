@@ -11,7 +11,7 @@
     <text class="userinfo-nickname2">Persona</text>
   </view>
   
-  <view class="usermotto" bindtap='beginttest'>
+  <view class="usermotto" bindtap='enter'>
     <test class="user-motto">{{motto}}</test>
   </view>
 </view>
