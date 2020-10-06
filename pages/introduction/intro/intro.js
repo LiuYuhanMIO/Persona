@@ -2,14 +2,14 @@
 Page({
   goToInstruction: function () {
     wx.redirectTo({
-      url: '../introduction/instruction',
+      url: '../instruction/instruction',
     })
   },
   /**
    * 页面的初始数据
    */
   data: {
-    strStart:"了解了"
+    strStart:"了解"
   },
 
 on_mbtiTable:function(){

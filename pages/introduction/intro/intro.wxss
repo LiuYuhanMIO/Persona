@@ -1,0 +1,36 @@
+/* pages/introduction/intr2.wxss */
+.title{
+  display:block;
+  line-height:60rpx;
+  font-weight: bold;
+  letter-spacing: 40rpx;
+  text-align: center;
+}
+
+.main-text{
+  display: block;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+
+.lists{
+  display: block;
+  margin-top: 5rpx;
+  text-indent: 4em;
+  font-size: 30rpx;
+  text-align: left;
+}
+
+.image{
+  margin-top: 10rpx;
+}
+
+.button{
+  display: block;
+  margin-top: 10rpx;
+  text-align: center;
+  margin-left: 8em;
+}

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '开始测试',
+    motto: '进入',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -51,9 +51,9 @@ Page({
       hasUserInfo: true
     })
   },
-  beginttest: function(){
+  enter: function(){
     wx.redirectTo({
-      url: '../test/test'
+      url: '../introduction/intro/intro'
     })
   }
 })

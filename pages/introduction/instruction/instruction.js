@@ -3,7 +3,7 @@ Page({
   //测试按钮被点击
   goToTest: function () {
     wx.redirectTo({
-      url: '../test/test',
+      url: '../../test/test',
     })
   },
   /**
