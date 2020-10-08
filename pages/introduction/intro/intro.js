@@ -12,6 +12,20 @@ Page({
     strStart:"了解"
   },
 
+  //点击按钮播放音乐
+ playmusic:function(){
+  const innerAudioContext = wx.createInnerAudioContext()
+  innerAudioContext.autoplay = true
+  innerAudioContext.src = '/data/气泡.mp3'
+  innerAudioContext.onPlay(() => {
+    console.log('开始播放')
+  })
+  innerAudioContext.onError((res) => {
+    console.log(res.errMsg)
+    console.log(res.errCode)
+  })
+},
+
 on_mbtiTable:function(){
   wx.previewImage({
     urls: ["http://m.qpic.cn/psb?/V11Tp57c2B9kPO/8fA.3tFXb0EUdbg1dSrxr.o.nYVAiJvfCpeWM8lUxUw!/b/dPQAAAAAAAAA&bo=1QIDAQAAAAADB*c!&rf=viewer_4"] // 需要预览的图片http链接列表

@@ -17,6 +17,10 @@
   text-align: left;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 .button{
   display: block;
   margin-top: 65rpx;

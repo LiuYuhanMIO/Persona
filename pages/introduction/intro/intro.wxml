@@ -1,10 +1,10 @@
 <!--pages/introduction/intr2.wxml-->
 <view>
   <text class="title">简介</text>
-  <text class="main-text">Persona是一个基于MBTI测试的性格测试类小程序。</text>
+  <text class="main-text">Persona是一个基于<text class="bold">MBTI测试</text>的<text class="bold">性格测试类小程序</text>。</text>
   <text class="main-text">MBTI又称迈尔斯-布里格斯类型指标。是美国心理学家凯恩琳-布里格斯据荣格的人格理论发展而得。</text>
 
-  <text class="main-text">该指标将回答四个问题：</text>
+  <text class="main-text">该指标将回答<text class="bold">4个问题</text>：</text>
   <text class="lists">1、测试者属于内向或是外向性格？ </text>
   <text class="lists">2、测试者通过经验或是直觉认识世界？</text>
   <text class="lists">3、测试者判断事物偏向理性或是感性？</text>
@@ -15,11 +15,15 @@
   <text class="lists">2、认识世界：经验S--N直觉</text>
   <text class="lists">3、判断事物：理性T--F感性</text>
   <text class="lists">4、生活态度：理性J--P感性</text>
-  <text class="main-text">四个维度如同四把标尺，测试者从每个标尺上得到一个字母（如内倾I与外倾E更偏向内倾I，则测试者精力支配为内倾I型）。4个字母相组为测试者性格类型，共16种可能类型：</text>
+  <text class="main-text">4个维度如同4把标尺，测试者从每个标尺上得到一个字母（如内倾I与外倾E更偏向内倾I，则测试者精力支配为内倾I型）。<text class="bold">4个字母相组为测试者性格类型</text>，共16种可能类型：</text>
   <!-- <text class="main-text">ISTJ, ISFJ, INFJ, INTJ, </text>
   <text class="main-text">ISTP, ISFP, INFP, INTP,</text>
   <text class="main-text">ESTP, ESFP, ENFP, ENTP,</text>
   <text class="main-text">ESTJ, ESFJ, ENFJ, ENTJ.</text> -->
   <image mode="widthFix" class="image" bindtap="on_mbtiTable" src="http://m.qpic.cn/psb?/V11Tp57c2B9kPO/8fA.3tFXb0EUdbg1dSrxr.o.nYVAiJvfCpeWM8lUxUw!/b/dPQAAAAAAAAA&bo=1QIDAQAAAAADB*c!&rf=viewer_4" />
-  <button class="button" type="primary" bindtap="goToInstruction" plain="true" size="mini"> {{strStart}} </button>
+
+  <radio-group bindchange='select' bindtap="playmusic">
+    <button class="button" type="primary" bindtap="goToInstruction" plain="true" size="mini"> {{strStart}} </button>
+  </radio-group>
+
 </view>
