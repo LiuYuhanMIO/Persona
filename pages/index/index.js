@@ -9,12 +9,14 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../introduction/intro'
     })
   },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -43,6 +45,8 @@ Page({
       })
     }
   },
+
+  //读取用户信息
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -51,9 +55,26 @@ Page({
       hasUserInfo: true
     })
   },
+
+  //点击进入按钮转到简介页面
   enter: function(){
     wx.redirectTo({
       url: '../introduction/intro/intro'
     })
-  }
+  },
+
+  //点击按钮播放音乐
+ playmusic:function(){
+  const innerAudioContext = wx.createInnerAudioContext()
+  innerAudioContext.autoplay = true
+  innerAudioContext.src = '/data/气泡.mp3'
+  innerAudioContext.onPlay(() => {
+    console.log('开始播放')
+  })
+  innerAudioContext.onError((res) => {
+    console.log(res.errMsg)
+    console.log(res.errCode)
+  })
+},
+
 })

@@ -6,6 +6,21 @@ Page({
       url: '../../test/test',
     })
   },
+
+  //点击按钮播放音乐
+ playmusic:function(){
+  const innerAudioContext = wx.createInnerAudioContext()
+  innerAudioContext.autoplay = true
+  innerAudioContext.src = '/data/气泡.mp3'
+  innerAudioContext.onPlay(() => {
+    console.log('开始播放')
+  })
+  innerAudioContext.onError((res) => {
+    console.log(res.errMsg)
+    console.log(res.errCode)
+  })
+},
+
   /**
    * 页面的初始数据
    */
