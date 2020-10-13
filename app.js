@@ -1,6 +1,10 @@
 //app.js
+//Bomb后端云
+var Bmob = require('utils/Bmob-2.2.5.min.js')
+Bmob.initialize("72dd9b9a44b017dc", "123456")
 App({
   onLaunch: function () {
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
