@@ -1,4 +1,6 @@
 //index.js
+var Bmob = require('../../utils/Bmob-2.2.5.min.js');
+
 //获取应用实例
 const app = getApp()
 
@@ -13,7 +15,16 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../introduction/intro'
+      url: '../introduction/intro/intro'
+    })
+    const query = Bmob.Query('diary')
+    query.set("name", "Bmob")
+    query.set("cover", "后端云")
+    query.save().then(res => {
+      console.log(res)
+      console.log('123')
+    }).catch(err => {
+      console.log(err)
     })
   },
 

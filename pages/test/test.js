@@ -1,4 +1,6 @@
 // pages/test/test.js
+var Bmob = require('../../utils/Bmob-2.2.5.min.js');
+
 Page({
 
   /**
@@ -7,6 +9,7 @@ Page({
   data: {
 
   },
+  
 
   //点击按钮播放音乐
  playmusic:function(){
@@ -75,5 +78,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onLaunch: function () {
+    //测试——返回表的前100条数据
+    const query = Bmob.Query("testID");//查询数据库
+    query.find().then(res => {
+      console.log(res)     //打印出查询到数据
+    })
   }
 })
