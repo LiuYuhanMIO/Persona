@@ -12,11 +12,11 @@ Persona是一个基于微信开发者工具开发的**性格测试类小程序**
 
 ## 小组成员
 
-- 刘宇涵 [@LiuYuhanMIO](https://github.com/LiuYuhanMIO) （组长）
-- 韩祎然 [@Philip-PKU](https://github.com/Philip-PKU)
-- 肖羽童 [@YutongXiao](https://github.com/YutongXiao)
-- 龚雨珂 [@Kyouuka](https://github.com/Kyouuka)
-- 王文博 [@webberwbwang](https://github.com/webberwbwang)
+- [@LiuYuhanMIO](https://github.com/LiuYuhanMIO) 
+- [@Philip-PKU](https://github.com/Philip-PKU)
+- [@YutongXiao](https://github.com/YutongXiao)
+- [@Kyouuka](https://github.com/Kyouuka)
+- [@webberwbwang](https://github.com/webberwbwang)
 
 
 ## 参考资源
